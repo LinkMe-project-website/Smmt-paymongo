@@ -1,8 +1,8 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
 const PAYMONGO_SECRET_KEY = Deno.env.get("PAYMONGO_SECRET_KEY")!;
-const SUPABASE_URL = Deno.env.get("SB_SERVICE_ROLE_KEY")!;
-const SUPABASE_SERVICE_ROLE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
+const SUPABASE_URL = Deno.env.get("SUPABASE_URL")!;
+const SUPABASE_SERVICE_ROLE_KEY = Deno.env.get("SB_SERVICE_ROLE_KEY")!;
 
 // TODO: palitan mo ito ng totoong presyo mo sa pesos (in centavos, so 200.00 = 20000)
 const VIP_PRICES: Record<string, { amount: number; label: string }> = {
